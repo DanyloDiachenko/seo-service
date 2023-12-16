@@ -151,7 +151,7 @@ const LongMenu = ({
 
 const mapState = (state: {
     asideKeywordsNumber: IAsideKeywordsNumberInitStore;
-}): {} => {
+}) => {
     return {
         asideKeywordsNumber: state.asideKeywordsNumber.asideKeywordsNumber,
     };
