@@ -1,0 +1,86 @@
+.registerLogin {
+    background: var(--gray-lightest);
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width: 600px) {
+        background: none;
+    }
+
+    .circle {
+        position: absolute;
+        width: 210px;
+        height: 200px;
+        filter: blur(162px);
+
+        @media (max-width: 600px) {
+            display: none;
+        }
+
+        &.circleTopCenter {
+            background: #feffe4;
+            left: 50%;
+            top: -112px;
+            transform: translate(-50%, 0);
+        }
+
+        &.circleBottomRight {
+            background: #d2fff7;
+            right: 62px;
+            bottom: -56px;
+        }
+
+        &.circleTopRight {
+            background: #c7e4ff;
+            right: -72px;
+            top: 252px;
+        }
+
+        &.circleBottomLeft {
+            width: 168px;
+            height: 160px;
+            background: #c1b2fd;
+            top: 540px;
+            left: -98px;
+        }
+
+        &.circleTopLeft {
+            background: #b3ffff;
+            top: -130px;
+            left: -108px;
+        }
+    }
+
+    .logo {
+        position: relative;
+        z-index: 1;
+        margin-top: 80px;
+        margin-left: 80px;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 55px;
+
+        @media (max-width: 600px) {
+            margin-top: 24px;
+            margin-left: 0;
+            text-align: center;
+            font-size: 32px;
+            line-height: 42px;
+        }
+    }
+
+    .banner {
+        width: 100%;
+        height: auto;
+        max-width: 848px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+
+        @media (max-width: 600px) {
+            display: none;
+        }
+    }
+}

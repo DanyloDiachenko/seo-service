@@ -1,0 +1,49 @@
+.form {
+    label {
+        width: 100%;
+        display: inline-block;
+        margin-top: 16px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    input {
+        margin-top: 8px;
+    }
+
+    .passwordInputWrapper {
+        margin-top: 8px;
+        border: 1px solid var(--gray-light);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        padding: 9.5px 8px;
+        transition: var(--transition);
+
+        &:hover {
+            border: 1px solid var(--gray-additional);
+        }
+
+        input {
+            width: 100%;
+            margin-top: 0;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            line-height: 21px;
+            color: var(--violet-dark);
+
+            &::placeholder {
+                color: var(--gray-additional);
+            }
+        }
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    .continueButton {
+        margin-top: 32px;
+    }
+}

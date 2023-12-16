@@ -1,0 +1,22 @@
+.googleButton {
+    width: 100%;
+    padding: 17px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--white);
+    box-shadow: 0px 5px 20px rgba(26, 32, 44, 0.05);
+    border-radius: 4px;
+	border: none;
+    cursor: pointer;
+
+    span {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--dark-violet);
+    }
+}

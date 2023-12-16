@@ -1,0 +1,74 @@
+.aside {
+    padding: 200px 48px 32px 48px;
+
+    @media (max-width: 600px) {
+        padding: 24px 20px 32px 20px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .description {
+        text-align: center;
+        margin-top: 24px;
+
+        @media (max-width: 600px) {
+            margin-top: 16px;
+        }
+    }
+
+    .googleButton {
+        margin-top: 40px;
+
+        @media (max-width: 600px) {
+            margin-top: 24px;
+        }
+    }
+
+    .orWith {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 16px;
+
+        hr {
+            width: 100%;
+            border: 1px solid var(--gray-light);
+        }
+
+        p {
+            white-space: nowrap;
+            color: var(--gray-additional);
+        }
+    }
+
+    .loginText {
+        margin-top: 16px;
+        text-align: center;
+
+        a {
+            font-weight: 500;
+            text-decoration: none;
+            color: var(--violet);
+            transition: var(--transition);
+
+            &:hover {
+                color: var(--violet-dark);
+            }
+        }
+    }
+
+    .agreement {
+        text-align: center;
+        margin-top: 287px;
+
+        @media (max-width: 600px) {
+            margin-top: 40px;
+        }
+
+        span {
+            color: var(--violet-dark);
+        }
+    }
+}

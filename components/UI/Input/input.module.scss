@@ -1,0 +1,33 @@
+.input {
+    width: 100%;
+    border: 1px solid var(--gray-light);
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 9.5px 8px;
+    outline: none;
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--violet-dark);
+    background: var(--white);
+
+    &:disabled {
+        cursor:auto;
+
+        &::placeholder {
+            color: var(--black);
+        }
+
+        &:hover {
+            border: 1px solid var(--gray-light);
+        }
+    }
+
+    &::placeholder {
+        color: var(--gray-additional);
+    }
+
+    &:hover {
+        border: 1px solid var(--gray-additional);
+    }
+}

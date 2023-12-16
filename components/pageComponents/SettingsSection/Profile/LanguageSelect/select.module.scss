@@ -1,0 +1,18 @@
+.wrapper {
+    margin-top: 16px;
+    position: relative;
+
+    span {
+        margin-left: -12px;
+    }
+
+    .variants {
+        top: 55px;
+
+        div {
+            img {
+                margin-right: -12px !important;
+            }
+        }
+    }
+}

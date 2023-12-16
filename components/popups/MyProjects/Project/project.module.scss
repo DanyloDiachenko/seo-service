@@ -1,0 +1,35 @@
+.item {
+    padding: 24px;
+    text-align: center;
+    border: 2px solid var(--gray-light);
+    border-radius: 8px;
+    transition: var(--transition);
+
+    &:hover {
+        border: 2px solid var(--violet);
+        border-radius: 8px;
+    }
+
+    .title {
+        color: var(--black);
+        margin-top: 8px;
+    }
+
+    .website {
+        margin-top: 8px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .country {
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        span {
+            color: var(--dark-violet);
+        }
+    }
+}

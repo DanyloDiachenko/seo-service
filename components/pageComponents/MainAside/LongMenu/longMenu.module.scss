@@ -1,0 +1,208 @@
+.aside {
+    width: 320px;
+    padding: 24px;
+    background: var(--white);
+
+    @media (max-width: 600px) {
+        z-index: 100;
+        position: fixed;
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
+        padding: 12.5px 20px;
+    }
+
+    .top {
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 600px) {
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 55px;
+            color: var(--violet-dark);
+
+            @media (max-width: 600px) {
+                font-size: 32px;
+                line-height: 42px;
+            }
+        }
+
+        .menuIcon {
+            display: none;
+
+            @media (max-width: 600px) {
+                display: block;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+
+        &:active {
+            color: var(--violet);
+        }
+    }
+
+    .user {
+        margin-top: 40px;
+        text-align: center;
+
+        @media (max-width: 600px) {
+            display: none;
+        }
+
+        h3 {
+            margin-top: 8px;
+        }
+
+        p {
+            margin-top: 8px;
+        }
+
+        .country {
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+
+            span {
+                color: var(--dark-violet);
+            }
+        }
+    }
+
+    .search {
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        gap: 11.5px;
+        border: 1px solid #ebeaee;
+        border-radius: 4px;
+        padding: 11.5px;
+
+        @media (max-width: 600px) {
+            display: none;
+        }
+
+        input {
+            width: 100%;
+            font-size: 14px;
+            line-height: 21px;
+            outline: none;
+            cursor: pointer;
+            transition: var(--transition);
+            color: var(--violet-dark);
+            border: none;
+
+            &::placeholder {
+                color: var(--gray-additional);
+            }
+        }
+    }
+
+    .caption {
+        margin-top: 45px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        color: var(--gray);
+    }
+
+    .browseSection {
+        @media (max-width: 600px) {
+            display: none;
+        }
+
+        .dashboard {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .keywords {
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+
+            .rectangle {
+                width: 8px;
+                height: 28px;
+                margin-left: -24px;
+                background: var(--violet);
+                border-radius: 0px 8px 8px 0px;
+            }
+
+            .keywordsIcon {
+                margin-left: 57px;
+            }
+
+            h3 {
+                color: var(--violet);
+                margin-left: 16px;
+            }
+
+            .number {
+                width: 24px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 16px;
+                background: var(--violet);
+                border-radius: 50%;
+                color: var(--white);
+                margin-left: 59px;
+            }
+        }
+    }
+
+    .profileSection {
+        @media (max-width: 600px) {
+            display: none;
+        }
+
+        .caption {
+            margin-bottom: 24px;
+        }
+
+        .item {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            cursor: pointer;
+        }
+    }
+
+    .changeAsideWidth {
+        margin-top: 97px;
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 600px) {
+            display: none;
+        }
+
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+
+            .reversed {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

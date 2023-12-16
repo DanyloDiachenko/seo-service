@@ -1,0 +1,25 @@
+.textarea {
+    margin-top: 16px;
+    resize: none;
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid var(--violet-dark);
+    overflow: hidden;
+    outline: none;
+    border-radius: 4px;
+    padding: 8px;
+    font-family: "__Poppins_3e45a8", "__Poppins_Fallback_3e45a8";
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--violet-dark);
+
+    @media (max-width: 600px) {
+        min-height: 120px;
+    }
+}
+
+.length {
+    text-align: end;
+    margin-top: 8px;
+}
+

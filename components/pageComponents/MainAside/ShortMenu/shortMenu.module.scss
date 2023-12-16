@@ -1,0 +1,82 @@
+.aside {
+    width: 320px;
+    padding: 24px;
+    background: var(--white);
+
+    &.menuShort {
+        width: 80px;
+        text-align: center;
+
+        .logo {
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 55px;
+            color: var(--violet-dark);
+            text-decoration: none;
+
+            @media (max-width: 600px) {
+                font-size: 32px;
+                line-height: 42px;
+            }
+        }
+
+        .user {
+            margin-top: 40px;
+        }
+
+        .search {
+            margin-top: 43.5px;
+        }
+
+        .browseSection {
+            margin-top: 54.5px;
+
+            .keywords {
+                margin-top: 17px;
+                display: flex;
+                align-items: center;
+
+                .rectangle {
+                    width: 8px;
+                    height: 28px;
+                    margin-left: -24px;
+                    background: var(--violet);
+                    border-radius: 0px 8px 8px 0px;
+                }
+
+                .keywordsIcon {
+                    margin-left: 19px;
+                }
+            }
+        }
+
+        .profileSection {
+            margin-top: 48px;
+
+            img {
+                cursor: pointer;
+                margin-top: 20px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    .changeAsideWidth {
+        margin-top: 97px;
+        display: flex;
+        justify-content: center;
+
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+
+            .reversed {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

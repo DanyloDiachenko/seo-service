@@ -1,0 +1,46 @@
+.title {
+    @media (max-width: 600px) {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        margin-top: 48px;
+    }
+}
+
+.description {
+    margin-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--gray-light);
+
+    @media (max-width: 600px) {
+        margin-top: 8px;
+        padding-bottom: 16px;
+    }
+}
+
+.form {
+    margin-top: 40px;
+
+    @media (max-width: 600px) {
+        margin-top: 16px;
+    }
+
+    p {
+        margin-top: 8px;
+    }
+
+    .buttonWrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+        margin-bottom: 20px;
+
+        @media (max-width: 600px) {
+            margin-top: 32px;
+        }
+
+        button {
+            max-width: 160px;
+        }
+    }
+}

@@ -1,0 +1,127 @@
+.top {
+    position: relative;
+
+    .title {
+        text-align: center;
+    }
+
+    .closeButton {
+        top: 15px;
+        right: 0;
+        position: absolute;
+        border: none;
+        background: none;
+        cursor: pointer;
+        line-height: 0;
+
+        @media (max-width: 600px) {
+            display: none;
+        }
+    }
+}
+
+.search {
+    max-width: 272px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 11.5px;
+    border: 1px solid #ebeaee;
+    border-radius: 4px;
+    padding: 11.5px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 600px) {
+        margin-top: 16px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 14px;
+        line-height: 21px;
+        outline: none;
+        cursor: pointer;
+        transition: var(--transition);
+        color: var(--violet-dark);
+        border: none;
+
+        &::placeholder {
+            color: var(--gray-additional);
+        }
+    }
+}
+
+.table {
+    width: 100%;
+    margin-top: 24px;
+    border: 1px solid #ebeaee;
+    border-collapse: collapse;
+
+    tbody {
+        tr {
+            border: 1px solid #ebeaee;
+            position: relative;
+
+            td {
+                height: 48px;
+                border: 1px solid #ebeaee;
+
+                @media (max-width: 600px) {
+                    height: 40px;
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    padding: 3px 8px;
+                }
+            }
+
+            .number {
+                width: 48px;
+
+                @media (max-width: 600px) {
+                    width: 40px;
+                }
+            }
+
+            .more {
+                width: 48px;
+
+                @media (max-width: 600px) {
+                    width: 40px;
+                }
+
+                div {
+                    justify-content: center;
+
+                    img {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .delete {
+                width: 140px;
+                z-index: 1;
+                position: absolute;
+                right: 8px;
+                top: 40px;
+                padding: 8px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                filter: drop-shadow(0px 5px 20px rgba(26, 32, 44, 0.05));
+                border-radius: 8px;
+                background: var(--white);
+                cursor: pointer;
+
+                @media (max-width: 600px) {
+                    font-size: 12px;
+                    top: 24px;
+                }
+            }
+        }
+    }
+}
