@@ -21,7 +21,7 @@ const LoginAside = (): JSX.Element => {
             </p>
             <p className={styles.agreement}>
                 By continuing you agree to our <br />
-                <span>Terms of Service</span> &<span>Privacy Policy</span>
+                <span>Terms of Service</span> & <span>Privacy Policy</span>
             </p>
         </aside>
     );

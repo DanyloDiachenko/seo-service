@@ -5,7 +5,6 @@ import styles from "./registerLoginSection.module.scss";
 const RegisterLoginSection = (): JSX.Element => {
     return (
         <div className={styles.registerLogin}>
-            {/* circles -background */}
             <div className={`${styles.circle} ${styles.circleTopCenter}`}></div>
             <div
                 className={`${styles.circle} ${styles.circleBottomRight}`}
