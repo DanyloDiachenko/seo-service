@@ -67,7 +67,7 @@ const LongMenu = ({
             </div>
             <div className={styles.browseSection}>
                 <div className={styles.caption}>Browse</div>
-                <Link href="/dashboard" className={styles.dashboard}>
+                <Link href="/" className={styles.dashboard}>
                     <Image
                         src="/icons/dashboard.svg"
                         alt="dashboard icon"

@@ -1,11 +1,7 @@
-const Home = () => {
-    return (
-        <>
-            <section>
-                <h1>dsad</h1>
-            </section>
-        </>
-    );
+import DashboardSection from "components/pageComponents/DashboardSection";
+
+const Dashboard = (): JSX.Element => {
+    return <DashboardSection />;
 };
 
-export default Home;
+export default Dashboard;

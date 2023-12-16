@@ -40,7 +40,7 @@ const ShortMenu = ({
                 className={styles.search}
             />
             <div className={styles.browseSection}>
-                <Link href="/dashboard">
+                <Link href="/">
                     <Image
                         src="/icons/dashboard.svg"
                         alt="dashboard icon"
